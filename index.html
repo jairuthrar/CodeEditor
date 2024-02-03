@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+   
+    <div class="header">
+        <h1>Code Editor <i class='bx bx-code-block'></i></h1>
+    
+    
+        <button id="startButton" onclick="toggleTimer()" class="alarm">
+            <div class="timer">
+                <i class='bx bx-alarm'></i>
+            <h4 id="timerDisplay">00:00:00</h4>
+            
+        </button>
+    </div>
+</div>
+   
+
+    <div class="editor_container">
+        <div class="editor">
+            <div class="html_part">
+            <label >
+                <i class='bx bxl-html5'></i>HTML</label>
+                 <button onclick="cleartext_html()"><i class='bx bx-refresh' ></i></button>
+            </div>
+            <textarea  onkeyup="run()" id="html"  spellcheck="false"></textarea>
+            <div class="css_part">
+            <label ><i class='bx bxs-file-css'></i>CSS</label>
+            <button onclick="cleartext_css()"><i class='bx bx-refresh' ></i></button>
+            </div>
+            <textarea onkeyup="run()"  id="css" spellcheck="false" ></textarea>
+            <div class="js_part">
+            <label ><i class='bx bxl-javascript'></i>JAVASCRIPT</label>
+            <button onclick="cleartext_js()"><i class='bx bx-refresh' ></i></button>
+            </div>
+            <textarea  onkeyup="run()" id="js" spellcheck="false"></textarea>
+        </div>
+         
+        <div class="output">
+        <div class="output_part">
+            <label>Output</label>
+            <button onclick="run()" class="run"><i class='bx bx-play'></i></button>
+            <button  class="refresh" onclick="cleartext_output()">
+            <i class='bx bx-refresh'></i>
+            </button>
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+   
+  
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
