@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(4, 4, 46);
+}
+
+
+.header{
+
+    background-color: rgb(4, 4, 46);
+    position:fixed;
+    top: 0;
+    width: 100%;
+    text-shadow: 2px 2px 2px rgb(55, 107, 44);
+    color: antiquewhite;
+    padding: .1rem;
+    display: flex;
+    margin-left: 40%;
+    gap:10%;
+
+}
+
+.timer{
+    display: flex;
+    gap: 30px;
+    color: antiquewhite;
+}
+.timer i{
+    font-size: 35px;
+  
+}
+
+
+
+
+
+.editor_container{
+    background-color: rgb(4, 4, 46);
+    color: white;
+    text-align: start;
+    display: flex;
+    padding:1rem;
+    margin-top: 40px;
+   
+}
+
+.editor ,.output{
+    flex-basis: 50%;
+    padding: 10px;
+}
+.html_part,.css_part,.js_part,.output_part{
+    display: flex;
+}
+
+.output_part label{
+    padding-left: 20px;
+}
+label{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-shadow: .5px .5px  1.5px;
+    gap: 10px;
+}
+
+label i{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+textarea{
+    
+    width: 100%;
+    height:300px;
+    background-color:rgb(17, 3, 3) ;
+    color: white;
+    border: 0;  
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    resize: none;
+    border-radius: 5px;
+}
+
+iframe{
+    width: 100%;
+    height:95%;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.run{
+    margin-left: 60%;
+    font-size: 35px;
+
+}
+.refresh,.alarm{
+margin-left: 20px;
+}
+
+.js_part button{
+    margin-left: 60%;
+}
+
+
+button {
+   margin-left: 70%;
+   color: white;
+   background-color: rgb(4, 4, 46);
+   border: none;
+   font-size: 25px;
+}
+    
