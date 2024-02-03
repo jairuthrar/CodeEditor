@@ -33,7 +33,15 @@ body{
     font-size: 35px;
   
 }
+ button:hover{
+   
+    color: wheat;
+}
 
+.timer :hover{
+   
+    color: white;
+ }
 
 
 
@@ -118,3 +126,4 @@ button {
    font-size: 25px;
 }
     
+
